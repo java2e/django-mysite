@@ -1,0 +1,132 @@
+{% extends 'polls/base.html' %}
+{% load staticfiles %}
+
+{% block  header %}
+	<!-- Header -->
+			<header id="header" class="animate-onscroll">
+
+				<!-- Main Header -->
+				<div id="main-header">
+
+					<div class="container">
+
+					<div class="row">
+
+
+
+						<!-- Logo -->
+						<div id="logo" class="col-lg-3 col-md-3 col-sm-3">
+
+							<a href="main-v1.html"><img src="{% static 'polls/img/logo.png' %}" alt="Logo"></a>
+
+						</div>
+						<!-- /Logo -->
+
+
+
+						<!-- Main Quote -->
+						<div class="col-lg-5 col-md-4 col-sm-4">
+
+							<blockquote>ANKARA ADANA KARAİSALILAR ALADAĞLILAR POZANTILILAR EĞİTİM KÜLTÜR YARDIMLAŞMA VE DAYANIŞMA DERNEĞİ </blockquote>
+
+						</div>
+						<!-- /Main Quote -->
+
+
+
+						<!-- Newsletter -->
+						<div class="col-lg-4 col-md-5 col-sm-5">
+
+							<form id="newsletter" action="php/newsletter-form.php" method="POST">
+
+								<h5><strong>Sign up</strong> for email updates</h5>
+								<div class="newsletter-form">
+
+									<div class="newsletter-email">
+										<input type="text" name="newsletter-email" placeholder="Email address">
+									</div>
+
+									<div class="newsletter-zip">
+										<input type="text" name="newsletter-zip" placeholder="Zip code">
+									</div>
+
+									<div class="newsletter-submit">
+										<input type="submit" value="">
+										<i class="icons icon-right-thin"></i>
+									</div>
+
+								</div>
+
+							</form>
+
+						</div>
+						<!-- /Newsletter -->
+
+
+
+					</div>
+
+					</div>
+
+				</div>
+				<!-- /Main Header -->
+
+
+
+
+
+				<!-- Lower Header -->
+				<div id="lower-header">
+
+					<div class="container">
+
+					<div id="menu-button">
+						<div>
+						<span></span>
+						<span></span>
+						<span></span>
+						</div>
+						<span>Menu</span>
+					</div>
+
+					<ul id="navigation">
+
+						<!-- Home -->
+						<li class="home-button current-menu-item">
+
+							<a href="main-v1.html"><i class="icons icon-home"></i></a>
+
+						</li>
+						<!-- /Home -->
+
+						<!-- Pages -->
+
+
+								<li><a href="about.html">Hakkında</a></li>
+								<li><a href="team.html">Yönetim</a></li>
+								<li><a href="team.html">Yuvarlak Masa</a></li>
+								<li><a href="team.html">Haber & Etkinlik</a></li>
+								<li><a href="team.html">Galeri</a></li>
+								<li><a href="contact.html">İletişim</a></li>
+
+
+						<!-- /Pages -->
+
+
+						<!-- Donate -->
+						<li class="donate-button ">
+							<a href="#">Donate Today</a>
+						</li>
+						<!-- /Donate -->
+
+					</ul>
+
+					</div>
+
+				</div>
+				<!-- /Lower Header -->
+
+
+			</header>
+			<!-- /Header -->
+{% endblock %}
